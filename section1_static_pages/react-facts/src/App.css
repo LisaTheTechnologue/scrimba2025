@@ -1,0 +1,59 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;  
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
+
+header {
+  height: 90px;
+  
+  font-weight: 700;
+  font-style: bold;
+  font-size: 400;
+
+  background-color: black;
+  color: white;
+  padding: 30px 25px;
+}
+
+nav {
+  font-weight: 600;
+  font-style: bold;
+  align-items: center;
+  font-size: 300;
+  display: flex;
+}
+
+nav > img {
+  width: 40px;
+  margin-right: 7px;
+}
+
+nav > span {
+  font-size: 1.3rem;
+  color:aqua;
+}
+
+main {
+  padding: 60px 30px;
+  background-image: url('../src/assets/react-logo-half.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 65%;
+}
+
+.list {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.list > li {
+  padding-block: 10px; /* vs margin-block*/
+  line-height: 20px;
+}
+
+.list > li::marker {
+  color: aqua;
+  font-size: 1.3rem;
+}

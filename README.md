@@ -7,6 +7,8 @@ Video: @Scrimba https://www.youtube.com/watch?v=x4rFhThSX04
 
 Project: ReactFacts site
 
+Time: https://youtu.be/x4rFhThSX04?t=369
+
 - Intro React
 - Why React? Composable and Declarative
 - React Elements

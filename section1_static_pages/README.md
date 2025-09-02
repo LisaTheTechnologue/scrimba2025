@@ -4,6 +4,31 @@ This is the first ever lesson so we learn from the real basic.
 
 Already have html, css, js knowledge.
 
+<!-- vscode-markdown-toc -->
+
+- 1. [Intro](#Intro)
+- 2. [Basic Knowledge](#BasicKnowledge)
+- 3. [React.createElement](#React.createElement)
+- 4. [JSX](#JSX)
+- 5. [Why React?](#WhyReact)
+- 6. [Housekeeping](#Housekeeping)
+- 7. [Pop quiz](#Popquiz)
+- 8. [Custom Components](#CustomComponents)
+- 9. [Custom Components Quiz](#CustomComponentsQuiz)
+- 10. [Fragments](#Fragments)
+- 11. [Custom Components - Parent/Child Components](#CustomComponents-ParentChildComponents)
+- 12. [Styling with Classes](#StylingwithClasses)
+- 13. [Export Component](#ExportComponent)
+- 14. [Appendix: Outline](#Appendix:Outline)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
+## 1. <a name='Intro'></a>Intro
+
 In HTML, we have a div
 
 ```html
@@ -39,7 +64,7 @@ npm create vite@latest
 
 Naming project + select React framework + Choose variant Javascript
 
-# Basic Knowledge
+## 2. <a name='BasicKnowledge'></a>Basic Knowledge
 
 | **Libraries**                                                | **Frameworks**                                                             |
 | ------------------------------------------------------------ | -------------------------------------------------------------------------- |
@@ -56,7 +81,7 @@ Naming project + select React framework + Choose variant Javascript
 - Composable/ Declarative (lesson: React.createElement())
 - Active development
 
-# React.createElement
+## 3. <a name='React.createElement'></a>React.createElement
 
 - createElement is created from early days and returns the Javascript object.
 - Cons: if we need nested tags, we need nested createElement
@@ -74,7 +99,7 @@ console.log(reactElement);
 root.render(reactElement);
 ```
 
-# JSX
+## 4. <a name='JSX'></a>JSX
 
 - JSX is a way to write HTML inside JavaScript
 - JSX = JavaScript + XML (HTML-like syntax) → Makes it easier to build UI with React.
@@ -84,7 +109,7 @@ const element = <h1>Hello, world!</h1>;
 root.render(element);
 ```
 
-# Why React?
+## 5. <a name='WhyReact'></a>Why React?
 
 - Composable:
   - Reusable and interchangeable pieces of hte web that can be combined in various ways to create complex systems
@@ -114,7 +139,7 @@ h1.className = "header";
 document.getElementById("root").appendChild(h1);
 ```
 
-# Housekeeping
+## 6. <a name='Housekeeping'></a>Housekeeping
 
 - Vite prefers jsx file over js for better performance --> remember to change it
 
@@ -126,7 +151,7 @@ document.getElementById("root").appendChild(h1);
 
 - In render block, only has 1 tag, e.g <main>, <section>, etc. Why? Remember how createElement works
 
-# Pop quiz
+## 7. <a name='Popquiz'></a>Pop quiz
 
 1. Where does React put all of the elements I create in JSX when I
    call `root.render()`?
@@ -160,7 +185,7 @@ root.render(
 
 - reusable components, combine for more complex task
 
-# Custom Components
+## 8. <a name='CustomComponents'></a>Custom Components
 
 ```jsx
 function Page() {
@@ -190,7 +215,7 @@ function Page() {
 root.render(<Page />);
 ```
 
-# Custom Components Quiz
+## 9. <a name='CustomComponentsQuiz'></a>Custom Components Quiz
 
 1. What is a React component?
 
@@ -222,7 +247,7 @@ root.render(Header());
 
 - It should be `root.render(<Header/>)`
 
-# Fragments
+## 10. <a name='Fragments'></a>Fragments
 
 - In the return part, there is only 1 parent element. If we use `<div>`, `<section>`, etc. It will create another parent tag wrapping the inner elements (html).
 
@@ -260,7 +285,7 @@ root.render(Header());
 
 - Using `<>`: don't need to import extra lib as we did for `<Fragment>`
 
-# Custom Components - Parent/Child Components
+## 11. <a name='CustomComponents-ParentChildComponents'></a>Custom Components - Parent/Child Components
 
 - Add one component to another component
 
@@ -277,7 +302,7 @@ function Page() {
 }
 ```
 
-# Styling with Classes
+## 12. <a name='StylingwithClasses'></a>Styling with Classes
 
 - Using `className`: remember that this is the DOM element, created by createElement.
 
@@ -286,7 +311,7 @@ const h1 = document.createElement("h1");
 h1.className = "header";
 ```
 
-# Export Component
+## 13. <a name='ExportComponent'></a>Export Component
 
 - `export default`: when importing, we can use any names
 
@@ -300,7 +325,7 @@ import WhateverName from "./Header";
 root.render(<WhateverName />);
 ```
 
-# Appendix: Outline
+## 14. <a name='Appendix:Outline'></a>Appendix: Outline
 
 ⌨️ Course Introduction
 
@@ -318,9 +343,7 @@ root.render(<WhateverName />);
 
 ⌨️ JSX
 
-⌨️ Why React? It's Composable! https://youtu.be/x4rFhThSX04?t=2312
-
-⌨️ Why React? It's Declarative!
+⌨️ Why React? https://youtu.be/x4rFhThSX04?t=2312
 
 ⌨️ Random housekeeping
 
@@ -350,8 +373,8 @@ root.render(<WhateverName />);
 
 ⌨️ ReactFacts - Main Content Section
 
-⌨️ ReactFacts - Coloring the Bullets
+⌨️ ReactFacts - Coloring the Bullets https://www.youtube.com/watch?v=x4rFhThSX04&t=7726s
 
-⌨️ ReactFacts - Add Background Image
+⌨️ ReactFacts - Add Background Image https://www.youtube.com/watch?v=x4rFhThSX04&t=7858s
 
 ⌨️ Section 1 Recap

@@ -1,27 +1,21 @@
-## Appendix: Outline
+<!-- vscode-markdown-toc -->
 
-⌨️ Section 2 Intro <br>
-⌨️ Travel Journal - Header<br>
-⌨️ Travel Journal - Entry Component<br>
-⌨️ Problem - Not reusable<br>
-⌨️ Props<br>
-⌨️ Prop quiz! (Get it?? )<br>
-⌨️ Destructuring props<br>
-⌨️ Props practice<br>
-⌨️ Non-string props<br>
-⌨️ Importing static assets<br>
-⌨️ Pass props to Entry component<br>
-⌨️ Review - array .map()<br>
-⌨️ React can render arrays<br>
-⌨️ Mapping components<br>
-⌨️ Map quiz!<br>
-⌨️ Travel Journal: Map Entry components<br>
-⌨️ Travel Journal: key prop<br>
-⌨️ Travel Journal: Pass object as props<br>
-⌨️ Travel Journal: Spread object as props<br>
-⌨️ Section 2 Recap<br>
+- 1. [Props: Intro](#Props:Intro)
+- 2. [Props: Quiz](#Props:Quiz)
+- 3. [Props: Destructive](#Props:Destructive)
+- 4. [Props: Non string](#Props:Nonstring)
+- 5. [Importing Static Assets](#ImportingStaticAssets)
+- 6. [React Can Render Arrays](#ReactCanRenderArrays)
+- 7. [Map](#Map)
+- 8. [Map: Quiz](#Map:Quiz)
 
-## Props: Intro
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
+## 1. <a name='Props:Intro'></a>Props: Intro
 
 1. Create a Resusable Component
 
@@ -67,7 +61,7 @@ function Contact(whatever) {
 />
 ```
 
-## Props: Quiz
+## 2. <a name='Props:Quiz'></a>Props: Quiz
 
 1. What do props help us accomplish?
 
@@ -104,7 +98,7 @@ function Navbar(props) {
 
 - React object
 
-## Props: Destructive
+## 3. <a name='Props:Destructive'></a>Props: Destructive
 
 - Ex1
 
@@ -131,7 +125,7 @@ function Navbar({ name, tel, email }) {
 }
 ```
 
-## Props: Non string
+## 4. <a name='Props:Nonstring'></a>Props: Non string
 
 - String: with or without {}
 
@@ -162,7 +156,7 @@ function Navbar({ name, tel, email }) {
 />
 ```
 
-## Importing Static Assets
+## 5. <a name='ImportingStaticAssets'></a>Importing Static Assets
 
 We can import image like this
 
@@ -177,7 +171,7 @@ import Fluffy from "/src/assets/fluffykins.png";
 />;
 ```
 
-## React Can Render Arrays
+## 6. <a name='ReactCanRenderArrays'></a>React Can Render Arrays
 
 Check JokeHeader.jsx
 
@@ -197,7 +191,7 @@ Output:
 - Console: react element with props.children, type
 - UI: plain string
 
-## Map
+## 7. <a name='Map'></a>Map
 
 Check challenge.js
 
@@ -229,7 +223,7 @@ const entryElements = data.map((entry) => {
 });
 ```
 
-## Map: Quiz
+## 8. <a name='Map:Quiz'></a>Map: Quiz
 
 1. What does the `.map()` array method do?
 

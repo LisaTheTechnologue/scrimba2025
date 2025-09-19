@@ -1,3 +1,16 @@
+# Projects Overview
+
+## Project 3: Chef Claude
+
+1. Event listeners
+2. State
+3. Conditional Rendering
+4. Forms
+5. State management strategies
+6. Retrieve Data from AI
+
+# Projects Details
+
 ## Intro
 
 Code: https://github.com/scrimba/learn-react
@@ -29,7 +42,7 @@ Project: Travel Journal
 
 ## Section 3: React State
 
-Project: Chef Claude
+Project: Chef Claude (with AI)
 
 - Event listeners
 - Props vs State

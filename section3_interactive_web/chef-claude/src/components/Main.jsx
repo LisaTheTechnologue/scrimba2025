@@ -22,10 +22,16 @@ import { getRecipeFromMistral } from "../assets/ai"
 
 export default function Main() {
 
-    // const [ingredients, setIngredients] = React.useState([])
-    const [ingredients, setIngredients] = React.useState(["Cabbage","Pork","Tomato","Oregano"])
+    const [ingredients, setIngredients] = React.useState([])
+    // const [ingredients, setIngredients] = React.useState(["Cabbage","Pork","Tomato","Oregano"])
 
     const [recipe, setRecipe] = React.useState("")
+    const recipeSection = React.useRef(null)
+    React.useEffect(() => {
+        if (recipe !== "" && recipeSection.current !== null) {
+            recipeSection.current.scrollIntoView({behavior: "smooth"})
+        }
+    }, [recipe])    
 
     function addIngredient(formData) {
         const newIngredient = formData.get("ingredient")
@@ -49,6 +55,7 @@ export default function Main() {
             </form>
             {ingredients.length > 0  && 
                 <IngredientsList 
+                    ref={recipeSection}
                     getRecipe={getRecipe}
                     ingredients={ingredients}/>}
             {recipe && <ClaudeRecipe recipe={recipe}/>}

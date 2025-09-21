@@ -2,6 +2,9 @@
 
 ## Project 3: Chef Claude
 
+- User inputs the ingredients
+- App generates the recipe by using HuggingFace AI API
+
 1. Event listeners
 2. State
 3. Conditional Rendering
